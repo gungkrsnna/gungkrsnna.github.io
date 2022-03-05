@@ -37,7 +37,7 @@ body{
     z-index: 100;
     top: 0;
     width: 100%;
-    background-color: red;
+    background-color: #DC3545;
 }
 
 .logo{
@@ -85,7 +85,7 @@ body{
     top: 2px;
     border: none;
     border-radius: 20px;
-    background-color: red;
+    background-color: #DC3545;
     padding: 3px 10px;
     color: white;
 }
@@ -117,7 +117,7 @@ body{
 }
 
 .top-navbar{
-    background-color: red;
+    background-color: #DC3545;
 }
 
 .bg-top-navbar{
@@ -248,7 +248,7 @@ body{
 }
 
 .bg-button-next{
-    background-color: red !important;
+    background-color: #DC3545 !important;
 }
 
 .bg-button-next button{
@@ -295,7 +295,7 @@ body{
 }
 
 .active-listing{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #DC3545;
 }
 
 .backhidden{
@@ -371,7 +371,7 @@ body{
     margin: auto;
     text-decoration: none;
     font-family: 'poppins-bold';
-    color: red;
+    color: #DC3545;
 }
 
 
@@ -444,7 +444,7 @@ body{
 
 .side-title-pict a{
     text-decoration: none;
-    background-color: red;
+    background-color: #DC3545;
     color: white;
     padding: 5px 15px;
     border-radius: 10px;
@@ -570,12 +570,12 @@ body{
 }
 
 .title-register2 a{
-    color: red;
+    color: #DC3545;
     text-decoration: none;
 }
 
 .title-register2 a:hover{
-    color: red;
+    color: #DC3545;
 }
 
 .zmore{
