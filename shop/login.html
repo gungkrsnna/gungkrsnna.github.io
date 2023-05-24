@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <!-- search -->
+    <div class="bg-navbar hidden" style="background-color: white;">
+        <div class="in-navbar">
+            <div class="back">
+                <img onclick="history.back()" src="image/icon/icons8-left-20.png" alt="">
+            </div>
+            <div class="search search2">
+                <p style="margin: auto; font-family: 'poppins-bold'; font-size: 20px;">Masuk</p>
+            </div>
+        </div>
+    </div>
+    <!-- close navbar -->
+
+
+<!-- register form -->
+<div class="register">
+    <div class="bg-register">
+        <p class="title-register">Login akunmu!</p>
+        <div class="form">
+            <p>Username</p>
+            <input type="email" placeholder="Masukkan email atau no hp">
+        </div>
+        <div class="form" style="margin-bottom: 0;">
+            <p>Password</p>
+            <div class="mb-3 zmore">
+                <input placeholder="Password" type="password" id="passwordEye">
+                <span id="change-icon"><i class="fas fa-eye icon-eye" aria-hidden="true" id="eye" onclick="toggleEye()"></i></span>
+            </div>
+        </div>
+        <div class="syarat" style="width: 100%; margin: 0;">
+            <a href="#" style="font-size: 12px; color: red; text-decoration: none;">Lupa kata sandi?</a>
+        </div>
+        <div class="hr"><hr><p>atau</p><hr></div>
+        <a class="btn btn-primary" style="background-color: transparent; color: black; border: 1px solid rgb(224, 224, 224);" href="#" role="button"><img src="image/icon/icons8-google-30.png" alt=""></a>
+        <a style="margin-top: 10px; padding: 10px 0;" class="btn btn-danger" href="#" role="button">Daftar</a>
+        <div class="syarat">
+            <p>Belum memiliki akun? <a href="register.html" style="text-decoration: none; color: red;">Daftar</a> </p>
+        </div>
+    </div>
+</div>
+<!-- close register form -->
+
+
+<script>
+    var state=false;
+    function toggleEye(){
+    if(state){
+        document.getElementById("passwordEye").setAttribute("type","password");
+        state = false;
+    }else{
+        document.getElementById("passwordEye").setAttribute("type","text");
+        state = true;
+    }
+}
+</script>
+<!-- js link -->
+<script src="js/all.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

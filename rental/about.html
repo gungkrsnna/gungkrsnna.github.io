@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Bike</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href='image/favicon.ico.png' rel='shortcut icon' type='image/x-icon'/> -->
+    <!-- tutup css -->
+</head>
+<body>
+    
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar" style=" box-shadow:
+    0 3px 3px rgba(7, 7, 7, 0.058),
+    0 5px 5px rgba(0, 0, 0, 0.08)
+    ;">
+      <div class="container-fluid" style="display: flex; justify-content: space-between; width: 75rem; position: relative;">
+
+        <div class="bg-form-2">
+          <a class="icon-nav-hm" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+
+        <div class="logo">
+          <a href="index.html" style="text-decoration: none; color:black;">LOGO</a>
+        </div>
+
+        <div class="hidden-nav" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="scooters.html">Scooters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="respon-nav button-open-text" id="respon">
+          <div class="search" id="select-bn search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop1" aria-controls="offcanvasTop">
+            <input disabled type="text" placeholder="Search" style="cursor: text;">
+            <div class="button-search">
+              <i class="fas fa-search icon-search"></i>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-form">
+          <a class="icon-nav-hm-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- sidebar -->
+    <div class="offcanvas offcanvas-start width-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style=" transition: 0.7s; background-color: white; color: black;">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+        <a class="text-reset icon-nav-hm" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="offcanvas-body" style="position: relative;">
+        <div>
+          <div class="menu-side" style="margin-top: 0;">
+            <a href="index.html">Home</a>
+          </div>
+          <hr>
+          <div class="menu-side">
+            <a href="scooters.html">Scooters</a>
+          </div>
+          <hr>
+          <div class="menu-side">
+            <a href="about.html">About</a>
+          </div>
+          <hr>
+          <div class="menu-side">
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- tutup sidebar -->
+    <!-- search responsive -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100vh;">
+      <div class="offcanvas-header" style="display: flex; justify-content: unset; margin: auto; width: 100%;">
+        <div class="search-2" style="width: 100%;">
+          <input type="search" id="autoText2" class="autoText2" placeholder="Search" style="width: 100%;">
+          <div class="button-search">
+            <i class="fas fa-search icon-search"></i>
+          </div>
+        </div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" onclick="document.getElementById('autoText2').value = ''"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="desc-search-topup">
+          <!-- judul -->
+          <p style="color: #8b8b8b;">favorite scooters</p>
+          <!-- isi -->
+          <div class="isi" style="margin-left: 5%;">
+            <a href="#" style="text-decoration:none; color: black;"><p>NMAX YAMAHA</p></a>
+            <a href="#" style="text-decoration:none; color: black;"><p>SCOOPY HONDA</p></a>
+            <a href="#" style="text-decoration:none; color: black;"><p>MIO</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tutup search responsive -->
+    <!-- search desktop -->
+    <div class="offcanvas offcanvas-top off-mobile" tabindex="-1" id="offcanvasTop1" aria-labelledby="offcanvasTopLabe" style="height: 100%;">
+      <div class="offcanvas-header bg-search-new">
+        <div class="respon" id="respon">
+          <!-- tambah width 50% -->
+            <div class="search" style="width: 100%;">
+              <input id="autoText" class="autoText" type="text"  placeholder="Search" style="width: 100%;" />
+              <div class="button-search">
+                <i class="fas fa-search icon-search"></i>
+              </div>
+            </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" style="margin: auto;" aria-label="Close" onclick="document.getElementById('autoText').value = ''"></button>
+        </div>
+      </div>
+      <div class="offcanvas-body-1">
+        <div class="fav-item-search">
+          <!-- judul -->
+          <p style="color: #8b8b8b;">Favorite scooters</p>
+          <!-- isi -->
+          <div class="fav-isi">
+            <a href="#" style="text-decoration:none; color: black;"><p>NMAX YAMAHA</p></a>
+            <a href="#" style="text-decoration:none; color: black;"><p>SCOOPY HONDA</p></a>
+            <a href="#" style="text-decoration:none; color: black;"><p>MIO</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tutup search desktop -->
+  <!-- tutup navbar -->
+
+
+
+        <!-- about us -->
+        <div class="about-us" style="margin: 50px 0 100px 0;">
+          <div class="bg-about-us">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate dignissimos sequi expedita magnam laborum cum error. Porro quibusdam natus libero laborum earum quos, eligendi quae</p>
+          </div>
+        </div>
+        <!-- close about us -->
+
+
+
+
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="bg-footer">
+        <div class="item-footer">
+          <h3>Our Scooters</h3>
+          <p><a href="scooters.html">NMAX</a></p>
+          <p><a href="scooters.html">Scoopy</a></p>
+          <p><a href="scooters.html">XMAX</a></p>
+          <p><a href="scooters.html">Vario Thecno</a></p>
+        </div>
+        <div class="item-footer">
+          <h3>Our rental location</h3>
+          <p><a href="#">Denpasar</a></p>
+          <p><a href="#">Canggu</a></p>
+          <p><a href="#">Seminyak</a></p>
+          <p><a href="#">Tanah lot</a></p>
+        </div>
+        <div class="item-footer">
+          <h3>More menu</h3>
+          <p><a href="index.html">Dashboard</a></p>
+          <p><a href="scooters.html">Scooters</a></p>
+          <p><a href="about.html">About</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="item-footer">
+          <h3>Social media</h3>
+          <div class="social-media-footer">
+            <a href="#"><i class="fab fa-instagram icon-footer-3"></i></a>
+            <a href="#"><i class="fab fa-facebook icon-footer-3"></i></a>
+            <a href="#"><i class="fab fa-twitter icon-footer-3"></i></a>
+          </div>
+        </div>
+        <div class="real-footer">
+          <hr>
+          <p>Copyright © 2022 @gungkrssna | All rights reserved</p>
+        </div>
+      </div>
+  </footer>
+  <!-- tutup footer -->
+
+
+
+
+
+
+
+
+<!-- loading screen -->
+<div class="loading-screen">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<!-- tutup loading screen -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content" style="border-radius: 10px !important;">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  onClick="window.location.reload()"></button>
+      </div>
+      <div class="modal-body">
+        <h3>Give us your best rating!</h3>
+        <p>and leave a comment so you know what you want to say</p>
+        <!-- form rate -->
+        <div class="container-stars">
+          <div class="bg-rate-stars">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5"><i class="fas fa-star label"></i></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4"><i class="fas fa-star label"></i></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3"><i class="fas fa-star label"></i></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2"><i class="fas fa-star label"></i></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1"><i class="fas fa-star label"></i></label>
+          </div>
+        </div><br>
+        <div class="coment-rate">
+          <textarea placeholder="input your comment"></textarea>
+        </div>
+
+        <!-- tutup form rate -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Send rate</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- tutup modal rateing -->
+
+
+
+
+
+
+<script src="js/auto.js"></script>
+<script src="js/auto2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/loading.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/slider.js"></script>
+<script>
+  $('.ms').click(function(){
+    $('.show-side').toggleClass("show");
+    $('.new-icon').toggleClass("rotate");
+  });
+</script>
+<script>
+  var lastScrollTop = 0;
+      navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function(){
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop){
+        navbar.style.top="-80px";
+        navbar.style.transition="0.3s"
+      }else{
+        navbar.style.top="0";
+      }
+      lastScrollTop = scrollTop;
+  })
+</script>
+<script>
+  const scrollDown = document.querySelector('.respon');
+  const buttonlDown = document.querySelector('.search');
+
+  buttonlDown.addEventListener('click', function(){
+    scrollDown.classList.add('active-down');
+  });
+</script>
+
+
+
+
+</body>
+</html>

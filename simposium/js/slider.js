@@ -1,0 +1,16 @@
+$('.owl-carousel').owlCarousel({
+    margin:25,
+    merge:true,
+    max:5,
+    autoWidth:true,
+    responsive:{
+        678:{
+            mergeFit:true,
+            items:2
+        },
+        1000:{
+            mergeFit:false,
+            items:4
+        }
+    }
+});

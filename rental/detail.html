@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Bike</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tutup css -->
+</head>
+<body>
+    
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar" style=" box-shadow:
+  0 3px 3px rgba(7, 7, 7, 0.058),
+  0 5px 5px rgba(0, 0, 0, 0.08)
+  ;">
+    <div class="container-fluid" style="display: flex; justify-content: space-between; width: 75rem; position: relative;">
+
+      <div class="bg-form-2">
+        <a class="icon-nav-hm" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none; color:black;">LOGO</a>
+      </div>
+
+      <div class="hidden-nav" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="service.html">Scooters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="respon-nav button-open-text" id="respon">
+        <div class="search" id="select-bn search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop1" aria-controls="offcanvasTop">
+          <input disabled type="text" placeholder="Search" style="cursor: text;">
+          <div class="button-search">
+            <i class="fas fa-search icon-search"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="bg-form">
+        <a class="icon-nav-hm-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fas fa-search"></i></a>
+      </div>
+    </div>
+  </nav>
+  <!-- sidebar -->
+  <div class="offcanvas offcanvas-start width-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style=" transition: 0.7s; background-color: white; color: black;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+      <a class="text-reset icon-nav-hm" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></a>
+    </div>
+    <div class="offcanvas-body" style="position: relative;">
+      <div>
+        <div class="menu-side" style="margin-top: 0;">
+          <a href="index.html">Home</a>
+        </div>
+        <hr>
+        <div class="menu-side">
+          <a href="service.html">Scooters</a>
+        </div>
+        <hr>
+        <div class="menu-side">
+          <a href="about.html">About</a>
+        </div>
+        <hr>
+        <div class="menu-side">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- tutup sidebar -->
+  <!-- search responsive -->
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100vh;">
+    <div class="offcanvas-header" style="display: flex; justify-content: unset; margin: auto; width: 100%;">
+      <div class="search-2" style="width: 100%;">
+        <input type="search" id="autoText2" class="autoText2" placeholder="Search" style="width: 100%;">
+        <div class="button-search">
+          <i class="fas fa-search icon-search"></i>
+        </div>
+      </div>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" onclick="document.getElementById('autoText2').value = ''"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="desc-search-topup">
+        <!-- judul -->
+        <p style="color: #8b8b8b;">favorite scooters</p>
+        <!-- isi -->
+        <div class="isi" style="margin-left: 5%;">
+          <a href="#" style="text-decoration:none; color: black;"><p>NMAX YAMAHA</p></a>
+          <a href="#" style="text-decoration:none; color: black;"><p>SCOOPY HONDA</p></a>
+          <a href="#" style="text-decoration:none; color: black;"><p>MIO</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tutup search responsive -->
+  <!-- search desktop -->
+  <div class="offcanvas offcanvas-top off-mobile" tabindex="-1" id="offcanvasTop1" aria-labelledby="offcanvasTopLabe" style="height: 100%;">
+    <div class="offcanvas-header bg-search-new">
+      <div class="respon" id="respon">
+        <!-- tambah width 50% -->
+          <div class="search" style="width: 100%;">
+            <input id="autoText" class="autoText" type="text"  placeholder="Search" style="width: 100%;" />
+            <div class="button-search">
+              <i class="fas fa-search icon-search"></i>
+            </div>
+          </div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" style="margin: auto;" aria-label="Close" onclick="document.getElementById('autoText').value = ''"></button>
+      </div>
+    </div>
+    <div class="offcanvas-body-1">
+      <div class="fav-item-search">
+        <!-- judul -->
+        <p style="color: #8b8b8b;">Favorite scooters</p>
+        <!-- isi -->
+        <div class="fav-isi">
+          <a href="#" style="text-decoration:none; color: black;"><p>NMAX YAMAHA</p></a>
+          <a href="#" style="text-decoration:none; color: black;"><p>SCOOPY HONDA</p></a>
+          <a href="#" style="text-decoration:none; color: black;"><p>MIO</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tutup search desktop -->
+<!-- tutup navbar -->
+
+
+
+
+<div class="bg-container">
+<!-- content -->      
+<br>
+    <!-- detail product -->
+    <div class="detail-product">
+        <div class="bg-detail-product">
+            <div class="gambar-detail-product">
+                <img src="image/nmax.png" alt="">
+            </div>
+            <div class="desc-detail-product">
+                <h3>NMAX</h3>
+                <p style="color: rgb(158, 158, 158);">Daily price : Rp. 120.000</p>
+                <p style="color: rgb(158, 158, 158);">Weekly price : Rp. 400.000</p>
+                <div class="btn-for-detail">
+                    <a class="shop-detail" href="#">Rent now</a>
+                </div>
+                <div class="more-detail-product">
+                    <h3>Detail Scooter</h3>
+                    <p>6.7-inch Super Retina XDR display with HDR and True Tone</p>
+                    <p>Ceramic Shield front, textured matte glass back and stainless steel design</p>
+                    <p>Water resistant to a depth of 6 meters for up to 30 minutes (IP68)</p>
+                    <p>Pro 12MP camera system (Ultra Wide, Wide, Telephoto) with Portrait mode, Night mode, Night mode portraits, Deep Fusion, Smart HDR 3, Apple ProRAW, and Dolby Vision HDR video recording up to 4K at 60 fps</p> 
+                    <p>LiDAR Scanner for Night mode portraits, faster autofocus in low light, and improved AR experiences</p>
+                    <p>12MP TrueDepth front camera with Portrait mode, Night mode, Deep Fusion, Smart HDR 3, Dolby Vision HDR video recording up to 4K at 30 fps, 4K video recording up to 60 fps, and slo-mo video support for 1080p at 120 fps</p>
+                    <p>5G and Gigabit LTE</p>
+                    <p>A14 Bionic chip with next-generation Neural Engine</p>
+                    <p>Battery life: Up to 20 hours video playback; up to 12 hours video playback (streamed)</p>
+                    <p>Face ID for secure authentication and Apple Pay</p>
+                    <p>Compatible with MagSafe accessories</p>
+                    <p>MagSafe and Qi wireless charging</p>
+                    <p>Fast-charge capable</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tutup detail produk -->
+
+
+        
+      <!-- tutup content -->
+    </div><br><br>
+  <!-- tutup content -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+      <div class="bg-footer">
+          <div class="item-footer">
+            <h3>Our Scooters</h3>
+            <p><a href="scooters.html">NMAX</a></p>
+            <p><a href="scooters.html">Scoopy</a></p>
+            <p><a href="scooters.html">XMAX</a></p>
+            <p><a href="scooters.html">Vario Thecno</a></p>
+          </div>
+          <div class="item-footer">
+            <h3>Our rental location</h3>
+            <p><a href="#">Denpasar</a></p>
+            <p><a href="#">Canggu</a></p>
+            <p><a href="#">Seminyak</a></p>
+            <p><a href="#">Tanah lot</a></p>
+          </div>
+          <div class="item-footer">
+            <h3>More menu</h3>
+            <p><a href="index.html">Dashboard</a></p>
+            <p><a href="scooters.html">Scooters</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="contact.html">Contact</a></p>
+          </div>
+          <div class="item-footer">
+            <h3>Social media</h3>
+            <div class="social-media-footer">
+              <a href="#"><i class="fab fa-instagram icon-footer-3"></i></a>
+              <a href="#"><i class="fab fa-facebook icon-footer-3"></i></a>
+              <a href="#"><i class="fab fa-twitter icon-footer-3"></i></a>
+            </div>
+          </div>
+          <div class="real-footer">
+            <hr>
+            <p>Copyright © 2022 @gungkrssna | All rights reserved</p>
+          </div>
+        </div>
+    </footer>
+    <!-- tutup footer -->
+  
+
+
+
+
+
+
+
+<!-- loading screen -->
+<div class="loading-screen">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<!-- tutup loading screen -->
+
+
+
+
+
+
+
+<script src="js/auto.js"></script>
+<script src="js/auto2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/loading.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/slider.js"></script>
+<script>
+  $('.ms').click(function(){
+    $('.show-side').toggleClass("show");
+    $('.new-icon').toggleClass("rotate");
+  });
+</script>
+<script>
+  var lastScrollTop = 0;
+      navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function(){
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop){
+        navbar.style.top="-80px";
+        navbar.style.transition="0.3s"
+      }else{
+        navbar.style.top="0";
+      }
+      lastScrollTop = scrollTop;
+  })
+</script>
+<script>
+  const scrollDown = document.querySelector('.respon');
+  const buttonlDown = document.querySelector('.search');
+
+  buttonlDown.addEventListener('click', function(){
+    scrollDown.classList.add('active-down');
+  });
+</script>
+
+
+
+
+</body>
+</html>
